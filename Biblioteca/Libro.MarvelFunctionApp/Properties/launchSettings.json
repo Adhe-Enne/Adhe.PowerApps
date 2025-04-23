@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Libro.MarvelFunctionApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7020",
+      "launchBrowser": false
+    }
+  }
+}

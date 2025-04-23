@@ -1,0 +1,4 @@
+{
+  {
+    "\\r\\n" "\\\"dn_Biblioteca@odata.bind\\\": \\\"/dn_Bibliotecas(f363152d-85e5-ef11-9341-002248365660)\\\",\\r\\n  \\\"dn_Libro@odata.bind\\\": \\\"/dn_Libros(ac66cca1-bee4-ef11-9341-002248365660)\\\",\\r\\n  \\\"dn_Socio@odata.bind\\\": \\\"/dn_Socios(631f602b-01e4-ef11-9341-000d3ac0c661)\\\",\\r\\n  \\\"dn_desde\\\": \\\"{Desde}\\\",\\r\\n  \\\"dn_hasta\\\": \\\"16/3/2025 00:00:00\\\"\\r\\n}"
+  }
