@@ -1,0 +1,147 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor principal */
+#container,
+#alquiler {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estado */
+#status {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Botones */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Formulario */
+#alquiler h2 {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+select,
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* Estilos para cuando están deshabilitados */
+select:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+/* Botón de mostrar formulario */
+#btnMostrarFormulario {
+  background-color: #28a745;
+}
+
+#btnMostrarFormulario:hover {
+  background-color: #1e7e34;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  overflow-x: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+  text-align: left;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Encabezado */
+thead {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Filas alternas para mejorar la legibilidad */
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Efecto hover en las filas */
+tbody tr:hover {
+  background-color: #e2e6ea;
+}
+
+/* Estilos para celdas de acción (botones, iconos, etc.) */
+td .btn {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+td .btn:hover {
+  background-color: #218838;
+}

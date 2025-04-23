@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Alquiler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    label,
+    select,
+    input {
+      display: block;
+      margin: 10px 0;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+    <script type="text/javascript" src="/webresources/dn_/socio/socio.alquiler.create.js"></script>
+
+</head>
+<body>
+    <div id="container">
+      <button id="createButton">Crear Socio en otro de Marcos Guerrero</button>
+    </div>
+
+  <div id = "alquiler">
+      <h2>Registrar Alquiler</h2>
+  <label for="biblioteca">Biblioteca:</label>
+  <select id="biblioteca" onchange="loadLibros()">
+    <option value="">Seleccione una biblioteca</option>
+  </select>
+
+  <label for="libro">Libro:</label>
+  <select id="libro" disabled>
+    <option value="">Seleccione un libro</option>
+  </select>
+
+  <label for="fechaDesde">Fecha Desde:</label>
+  <input type="date" id="fechaDesde">
+
+  <label for="fechaHasta">Fecha Hasta:</label>
+  <input type="date" id="fechaHasta">
+  <button onclick="enviarAlquiler()">Registrar Alquiler</button>
+  </div>
+
+
+</body>
+</html>

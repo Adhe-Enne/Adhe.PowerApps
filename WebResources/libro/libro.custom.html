@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Hero Search</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #searchContainer {
+      margin: 20px;
+    }
+
+    #results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    .card a {
+      display: block;
+      margin-top: 10px;
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="searchContainer">
+    <input type="text" id="heroName" placeholder="Ingrese el nombre del héroe">
+    <button onclick="callMarvelAPI()">Buscar</button>
+  </div>
+  <div id="results"></div>
+
+
+</body>
+<script type="text/javascript" src="/webresources/dn_/libro/libro.custom.js"></script>
+</html>

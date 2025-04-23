@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquileres de Socios</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <!-- Cargar Vue.js desde un CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.min.js"></script>
+<script type="text/javascript" src="/webresources/dn_/socio/socio.custom.vue.js"></script>
+
+</head>
+
+<body>
+  <div id="app">
+    <h2>Lista de Alquileres</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Biblioteca</th>
+          <th>Libro</th>
+          <th>Desde</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(alquiler, index) in alquileres" :key="index">
+          <td>{{ alquiler.biblioteca }}</td>
+          <td>{{ alquiler.libro }}</td>
+          <td>{{ alquiler.desde }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          alquileres: []
+        };
+      }
+    }).mount("#app");
+  </script>
+</body>
+
+</html>

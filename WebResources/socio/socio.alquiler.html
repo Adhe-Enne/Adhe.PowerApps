@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquileres Externos</title>
+  <script type="text/javascript" src="/webresources/dn_/tools.js"></script>
+  <script type="text/javascript" src="/webresources/dn_/socio/socio.alquiler.js"></script>
+  <link rel="stylesheet" type="text/css" href="/webresources/dn_/biblioteca.css">
+</head>
+<body>
+  <h3>Alquileres Externos</h3>
+  <div id="container">
+    <div id="status">Cargando...</div>
+    <button id="createButton" style="display: none;">Crear Socio en otro entorno</button>
+  </div>
+<div id="accionesSocio" style="display: none;">
+  <button id="btnMostrarFormulario" onclick="mostrarFormulario()">Nuevo Alquiler</button>
+  <button id="btnMostrarAlquileres" onclick="mostrarAlquileres()">Mostrar Alquileres</button>
+</div>
+  <!-- Formulario de alquiler -->
+  <div id="alquiler" style="display: none;">
+    <h2>Registrar Alquiler</h2>
+    <label for="biblioteca">Biblioteca:</label>
+    <select id="biblioteca" onchange="loadLibros()">
+      <option value="">Seleccione una biblioteca</option>
+    </select>
+    <label for="libro">Libro:</label>
+    <select id="libro" disabled>
+      <option value="">Seleccione un libro</option>
+    </select>
+    <label for="fechaDesde">Fecha Desde:</label>
+    <input type="date" id="fechaDesde">
+    <label for="fechaHasta">Fecha Hasta:</label>
+    <input type="date" id="fechaHasta">
+
+    <button onclick="enviarAlquiler()">Registrar Alquiler</button>
+  </div>
+
+  <!-- Sección para mostrar los alquileres -->
+  <div id="grillaAlquileres" class="table-container" style="display: none;" >
+    <h2>Alquileres del Socio</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Biblioteca</th>
+          <th>Libro</th>
+          <th>Fecha Desde</th>
+          <th>Fecha Hasta</th>
+        </tr>
+      </thead>
+      <tbody id="tablaAlquileres">
+        <!-- Aquí se llenarán los alquileres dinámicamente -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

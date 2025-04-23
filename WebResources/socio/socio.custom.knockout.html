@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="/webresources/dn_/socio/knockout.min.js"></script>
+
+  <style type="text/css">
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 5px;
+    }
+
+    th {
+      text-align: left;
+    }
+  </style>
+
+<body>
+  <table width="50%">
+    <caption data-bind="text: titulo"></caption>
+    <thead>
+      <tr>
+        <th data-bind="text: bibliotecaHeader"></th>
+        <th data-bind="text: libroHeader"></th>
+        <th data-bind="text: fechaDesdeHeader"></th>
+      </tr>
+    </thead>
+    <tbody data-bind="foreach: alquileres">
+      <tr>
+        <td data-bind="text: biblioteca"></td>
+        <td data-bind="text: libro"></td>
+        <td data-bind="text: fechaDesde"></td>
+      </tr>
+    </tbody>
+  </table>
+  </head>
+</body>
+<script type="text/javascript" src="/webresources/dn_/socio/socio.custom.knockout.js"></script>
+</html>
